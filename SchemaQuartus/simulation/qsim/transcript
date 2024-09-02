@@ -1,0 +1,18 @@
+# do BCD_LMDSH.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# couldn't execute "c:\intelfpga_lite\20.1\modelsim_ase\win32aloem\vcom": invalid argument
+# couldn't execute "c:\intelfpga_lite\20.1\modelsim_ase\win32aloem\vcom": invalid argument
+# vsim -c -t 1ps -sdfmax "EC2_vhd_vec_tst/i1=BCD_LMDSH_vhd.sdo" -L arriaii -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.EC2_vhd_vec_tst 
+# Start time: 20:11:46 on May 23,2023
+# ** Error: (vsim-3170) Could not find 'EC2_vhd_vec_tst'.
+#         Searched libraries:
+#             c:/intelfpga_lite/20.1/modelsim_ase/altera/vhdl/arriaii
+#             c:/intelfpga_lite/20.1/modelsim_ase/altera/vhdl/altera
+#             c:/intelfpga_lite/20.1/modelsim_ase/altera/vhdl/altera_mf
+#             c:/intelfpga_lite/20.1/modelsim_ase/altera/vhdl/220model
+#             c:/intelfpga_lite/20.1/modelsim_ase/altera/vhdl/sgate
+#             c:/intelfpga_lite/20.1/modelsim_ase/altera/vhdl/altera_lnsim
+#             D:/FACULTATE/AN3/Semestrul2/LMDSH/Tema1/SchemaQuartus/simulation/qsim/work
+# Error loading design
+# End time: 20:11:47 on May 23,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

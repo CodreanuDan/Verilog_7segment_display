@@ -1,0 +1,46 @@
+-- Content of the RAM memory
+
+DEPTH = 32;		-- Depth of memory: 5-bit address
+WIDTH = 8;		-- Width of memory: 8-bit data
+
+ADDRESS_RADIX = BIN;	-- All values in binary (HEX, DEC, OCT, BIN)
+DATA_RADIX = BIN;
+
+-- Specify memory content.
+CONTENT
+	BEGIN
+	[00000..11111]	:	00000000;	-- Initialize locations range 00-FF to 0000
+
+-- Format of each memory location is
+--     address : data
+-- Opcodes for the Little Computer 2
+--		000 = load A,mmmmm
+--		001 = store A,mmmmm
+--		010 = add A,mmmmm
+--		011 = sub A,mmmmm
+--		100 = in A
+--		101= jz mmmmm
+--		110 = jpos mmmmm
+--		111 = halt
+
+--
+--
+
+
+
+
+--Decrementare de la A pana la 0; A=45
+
+	00000	:	10000000; --input A=45
+	00001	:	01111111; --sub A=A-1
+	00010	:	10100100; -- Jz la halt
+	00011	:	11000001; --jpos la 00001
+	00100	:	11111111; --halt
+	
+	11111	:	00000001; --const 1
+
+END;
+
+
+
+

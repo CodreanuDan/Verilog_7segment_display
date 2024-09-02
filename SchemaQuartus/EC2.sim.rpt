@@ -1,0 +1,319 @@
+Simulator report for EC2
+Tue May 23 09:07:57 2023
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 ms     ;
+; Simulation Netlist Size     ; 94 nodes     ;
+; Simulation Coverage         ;      47.52 % ;
+; Total Number of Transitions ; 2000386      ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------------------------------------------+
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      47.52 % ;
+; Total nodes checked                                 ; 94           ;
+; Total output ports checked                          ; 101          ;
+; Total output ports with complete 1/0-value coverage ; 48           ;
+; Total output ports with no 1/0-value coverage       ; 42           ;
+; Total output ports with no 1-value coverage         ; 49           ;
+; Total output ports with no 0-value coverage         ; 46           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                   ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ram_block1a0 ; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|q_a[0] ; portadataout0    ;
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ram_block1a0 ; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|q_a[1] ; portadataout1    ;
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ram_block1a0 ; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|q_a[2] ; portadataout2    ;
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ram_block1a0 ; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|q_a[3] ; portadataout3    ;
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ram_block1a0 ; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|q_a[4] ; portadataout4    ;
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ram_block1a0 ; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|q_a[5] ; portadataout5    ;
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ram_block1a0 ; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|q_a[6] ; portadataout6    ;
+; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|ram_block1a0 ; |ec2|dp:inst2|lpm_ram_dq:65|altram:sram|altsyncram:ram_block|altsyncram_2cf1:auto_generated|q_a[7] ; portadataout7    ;
+; |ec2|cu:inst|151                                                                                         ; |ec2|cu:inst|151                                                                                   ; regout           ;
+; |ec2|cu:inst|229                                                                                         ; |ec2|cu:inst|229                                                                                   ; regout           ;
+; |ec2|cu:inst|2                                                                                           ; |ec2|cu:inst|2                                                                                     ; regout           ;
+; |ec2|cu:inst|3                                                                                           ; |ec2|cu:inst|3                                                                                     ; regout           ;
+; |ec2|cu:inst|228                                                                                         ; |ec2|cu:inst|228                                                                                   ; combout          ;
+; |ec2|dp:inst2|reg8:33|11                                                                                 ; |ec2|dp:inst2|reg8:33|11                                                                           ; regout           ;
+; |ec2|cu:inst|224                                                                                         ; |ec2|cu:inst|224                                                                                   ; combout          ;
+; |ec2|dp:inst2|reg8:33|15                                                                                 ; |ec2|dp:inst2|reg8:33|15                                                                           ; regout           ;
+; |ec2|cu:inst|218                                                                                         ; |ec2|cu:inst|218                                                                                   ; combout          ;
+; |ec2|dp:inst2|reg8:33|18                                                                                 ; |ec2|dp:inst2|reg8:33|18                                                                           ; regout           ;
+; |ec2|cu:inst|170                                                                                         ; |ec2|cu:inst|170                                                                                   ; combout          ;
+; |ec2|cu:inst|167~1                                                                                       ; |ec2|cu:inst|167~1                                                                                 ; combout          ;
+; |ec2|cu:inst|167~3                                                                                       ; |ec2|cu:inst|167~3                                                                                 ; combout          ;
+; |ec2|cu:inst|256~0                                                                                       ; |ec2|cu:inst|256~0                                                                                 ; combout          ;
+; |ec2|cu:inst|167~4                                                                                       ; |ec2|cu:inst|167~4                                                                                 ; combout          ;
+; |ec2|dp:inst2|reg8:33|33                                                                                 ; |ec2|dp:inst2|reg8:33|33                                                                           ; regout           ;
+; |ec2|cu:inst|251~0                                                                                       ; |ec2|cu:inst|251~0                                                                                 ; combout          ;
+; |ec2|dp:inst2|reg5:60|33                                                                                 ; |ec2|dp:inst2|reg5:60|33                                                                           ; regout           ;
+; |ec2|dp:inst2|2x5mux:73|4[0]~0                                                                           ; |ec2|dp:inst2|2x5mux:73|4[0]~0                                                                     ; combout          ;
+; |ec2|dp:inst2|reg8:33|30                                                                                 ; |ec2|dp:inst2|reg8:33|30                                                                           ; regout           ;
+; |ec2|dp:inst2|reg5:60|30                                                                                 ; |ec2|dp:inst2|reg5:60|30                                                                           ; regout           ;
+; |ec2|dp:inst2|2x5mux:73|4[1]~1                                                                           ; |ec2|dp:inst2|2x5mux:73|4[1]~1                                                                     ; combout          ;
+; |ec2|dp:inst2|reg8:33|27                                                                                 ; |ec2|dp:inst2|reg8:33|27                                                                           ; regout           ;
+; |ec2|dp:inst2|2x5mux:73|4[2]~2                                                                           ; |ec2|dp:inst2|2x5mux:73|4[2]~2                                                                     ; combout          ;
+; |ec2|dp:inst2|reg8:33|24                                                                                 ; |ec2|dp:inst2|reg8:33|24                                                                           ; regout           ;
+; |ec2|dp:inst2|2x5mux:73|4[3]~3                                                                           ; |ec2|dp:inst2|2x5mux:73|4[3]~3                                                                     ; combout          ;
+; |ec2|dp:inst2|reg8:33|21                                                                                 ; |ec2|dp:inst2|reg8:33|21                                                                           ; regout           ;
+; |ec2|dp:inst2|2x5mux:73|4[4]~4                                                                           ; |ec2|dp:inst2|2x5mux:73|4[4]~4                                                                     ; combout          ;
+; |ec2|cu:inst|263~0                                                                                       ; |ec2|cu:inst|263~0                                                                                 ; combout          ;
+; |ec2|dp:inst2|2x5mux:61|4[0]~0                                                                           ; |ec2|dp:inst2|2x5mux:61|4[0]~0                                                                     ; combout          ;
+; |ec2|cu:inst|248~0                                                                                       ; |ec2|cu:inst|248~0                                                                                 ; combout          ;
+; |ec2|cu:inst|248~2                                                                                       ; |ec2|cu:inst|248~2                                                                                 ; combout          ;
+; |ec2|cu:inst|248~3                                                                                       ; |ec2|cu:inst|248~3                                                                                 ; combout          ;
+; |ec2|dp:inst2|2x5mux:61|4[1]~1                                                                           ; |ec2|dp:inst2|2x5mux:61|4[1]~1                                                                     ; combout          ;
+; |ec2|dp:inst2|2x5mux:61|4[2]~2                                                                           ; |ec2|dp:inst2|2x5mux:61|4[2]~2                                                                     ; combout          ;
+; |ec2|dp:inst2|inc5:70|fa:33|2                                                                            ; |ec2|dp:inst2|inc5:70|fa:33|2                                                                      ; combout          ;
+; |ec2|dp:inst2|2x5mux:61|4[3]~3                                                                           ; |ec2|dp:inst2|2x5mux:61|4[3]~3                                                                     ; combout          ;
+; |ec2|dp:inst2|2x5mux:61|4[4]~4                                                                           ; |ec2|dp:inst2|2x5mux:61|4[4]~4                                                                     ; combout          ;
+; |ec2|Clock                                                                                               ; |ec2|Clock~corein                                                                                  ; combout          ;
+; |ec2|Clock~clkctrl                                                                                       ; |ec2|Clock~clkctrl                                                                                 ; outclk           ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |ec2|dp:inst2|4x8mux:78|13[6]~6   ; |ec2|dp:inst2|4x8mux:78|13[6]~6   ; combout          ;
+; |ec2|dp:inst2|reg8:51|11          ; |ec2|dp:inst2|reg8:51|11          ; regout           ;
+; |ec2|dp:inst2|reg8:51|15          ; |ec2|dp:inst2|reg8:51|15          ; regout           ;
+; |ec2|dp:inst2|reg8:51|18          ; |ec2|dp:inst2|reg8:51|18          ; regout           ;
+; |ec2|dp:inst2|reg8:51|21          ; |ec2|dp:inst2|reg8:51|21          ; regout           ;
+; |ec2|dp:inst2|reg8:51|24          ; |ec2|dp:inst2|reg8:51|24          ; regout           ;
+; |ec2|dp:inst2|reg8:51|27          ; |ec2|dp:inst2|reg8:51|27          ; regout           ;
+; |ec2|dp:inst2|reg8:51|30          ; |ec2|dp:inst2|reg8:51|30          ; regout           ;
+; |ec2|dp:inst2|reg8:51|33          ; |ec2|dp:inst2|reg8:51|33          ; regout           ;
+; |ec2|cu:inst|167~2                ; |ec2|cu:inst|167~2                ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:37|3~0 ; |ec2|dp:inst2|addsub:63|fa:37|3~0 ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:33|3~0 ; |ec2|dp:inst2|addsub:63|fa:33|3~0 ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:1|3~0  ; |ec2|dp:inst2|addsub:63|fa:1|3~0  ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:2|3~0  ; |ec2|dp:inst2|addsub:63|fa:2|3~0  ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:3|3~0  ; |ec2|dp:inst2|addsub:63|fa:3|3~0  ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:2|10   ; |ec2|dp:inst2|addsub:63|fa:2|10   ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[5]~0   ; |ec2|dp:inst2|4x8mux:78|13[5]~0   ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:1|10   ; |ec2|dp:inst2|addsub:63|fa:1|10   ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[4]~1   ; |ec2|dp:inst2|4x8mux:78|13[4]~1   ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:29|10  ; |ec2|dp:inst2|addsub:63|fa:29|10  ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[3]~2   ; |ec2|dp:inst2|4x8mux:78|13[3]~2   ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:33|10  ; |ec2|dp:inst2|addsub:63|fa:33|10  ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[2]~3   ; |ec2|dp:inst2|4x8mux:78|13[2]~3   ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:35|10  ; |ec2|dp:inst2|addsub:63|fa:35|10  ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[1]~4   ; |ec2|dp:inst2|4x8mux:78|13[1]~4   ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[0]~5   ; |ec2|dp:inst2|4x8mux:78|13[0]~5   ; combout          ;
+; |ec2|cu:inst|167~5                ; |ec2|cu:inst|167~5                ; combout          ;
+; |ec2|dp:inst2|reg5:60|24          ; |ec2|dp:inst2|reg5:60|24          ; regout           ;
+; |ec2|dp:inst2|reg5:60|39          ; |ec2|dp:inst2|reg5:60|39          ; regout           ;
+; |ec2|cu:inst|248~1                ; |ec2|cu:inst|248~1                ; combout          ;
+; |ec2|A[7]                         ; |ec2|A[7]                         ; padio            ;
+; |ec2|A[6]                         ; |ec2|A[6]                         ; padio            ;
+; |ec2|A[5]                         ; |ec2|A[5]                         ; padio            ;
+; |ec2|A[4]                         ; |ec2|A[4]                         ; padio            ;
+; |ec2|A[3]                         ; |ec2|A[3]                         ; padio            ;
+; |ec2|A[2]                         ; |ec2|A[2]                         ; padio            ;
+; |ec2|A[1]                         ; |ec2|A[1]                         ; padio            ;
+; |ec2|A[0]                         ; |ec2|A[0]                         ; padio            ;
+; |ec2|Enter                        ; |ec2|Enter~corein                 ; combout          ;
+; |ec2|Reset                        ; |ec2|Reset~corein                 ; combout          ;
+; |ec2|I[7]                         ; |ec2|I[7]~corein                  ; combout          ;
+; |ec2|I[6]                         ; |ec2|I[6]~corein                  ; combout          ;
+; |ec2|I[5]                         ; |ec2|I[5]~corein                  ; combout          ;
+; |ec2|I[4]                         ; |ec2|I[4]~corein                  ; combout          ;
+; |ec2|I[3]                         ; |ec2|I[3]~corein                  ; combout          ;
+; |ec2|I[2]                         ; |ec2|I[2]~corein                  ; combout          ;
+; |ec2|I[1]                         ; |ec2|I[1]~corein                  ; combout          ;
+; |ec2|I[0]                         ; |ec2|I[0]~corein                  ; combout          ;
+; |ec2|Reset~clkctrl                ; |ec2|Reset~clkctrl                ; outclk           ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                               ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |ec2|dp:inst2|4x8mux:78|13[6]~6  ; |ec2|dp:inst2|4x8mux:78|13[6]~6  ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[7]~10 ; |ec2|dp:inst2|4x8mux:78|13[7]~10 ; combout          ;
+; |ec2|cu:inst|167~0               ; |ec2|cu:inst|167~0               ; combout          ;
+; |ec2|dp:inst2|reg8:51|11         ; |ec2|dp:inst2|reg8:51|11         ; regout           ;
+; |ec2|dp:inst2|reg8:51|15         ; |ec2|dp:inst2|reg8:51|15         ; regout           ;
+; |ec2|dp:inst2|reg8:51|18         ; |ec2|dp:inst2|reg8:51|18         ; regout           ;
+; |ec2|dp:inst2|reg8:51|21         ; |ec2|dp:inst2|reg8:51|21         ; regout           ;
+; |ec2|dp:inst2|reg8:51|24         ; |ec2|dp:inst2|reg8:51|24         ; regout           ;
+; |ec2|dp:inst2|reg8:51|27         ; |ec2|dp:inst2|reg8:51|27         ; regout           ;
+; |ec2|dp:inst2|reg8:51|30         ; |ec2|dp:inst2|reg8:51|30         ; regout           ;
+; |ec2|dp:inst2|reg8:51|33         ; |ec2|dp:inst2|reg8:51|33         ; regout           ;
+; |ec2|cu:inst|167~2               ; |ec2|cu:inst|167~2               ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:2|10  ; |ec2|dp:inst2|addsub:63|fa:2|10  ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[5]~0  ; |ec2|dp:inst2|4x8mux:78|13[5]~0  ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:1|10  ; |ec2|dp:inst2|addsub:63|fa:1|10  ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[4]~1  ; |ec2|dp:inst2|4x8mux:78|13[4]~1  ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:29|10 ; |ec2|dp:inst2|addsub:63|fa:29|10 ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[3]~2  ; |ec2|dp:inst2|4x8mux:78|13[3]~2  ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:33|10 ; |ec2|dp:inst2|addsub:63|fa:33|10 ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[2]~3  ; |ec2|dp:inst2|4x8mux:78|13[2]~3  ; combout          ;
+; |ec2|dp:inst2|addsub:63|fa:35|10 ; |ec2|dp:inst2|addsub:63|fa:35|10 ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[1]~4  ; |ec2|dp:inst2|4x8mux:78|13[1]~4  ; combout          ;
+; |ec2|dp:inst2|4x8mux:78|13[0]~5  ; |ec2|dp:inst2|4x8mux:78|13[0]~5  ; combout          ;
+; |ec2|cu:inst|167~5               ; |ec2|cu:inst|167~5               ; combout          ;
+; |ec2|dp:inst2|reg5:60|27         ; |ec2|dp:inst2|reg5:60|27         ; regout           ;
+; |ec2|dp:inst2|reg5:60|24         ; |ec2|dp:inst2|reg5:60|24         ; regout           ;
+; |ec2|dp:inst2|reg5:60|39         ; |ec2|dp:inst2|reg5:60|39         ; regout           ;
+; |ec2|cu:inst|248~1               ; |ec2|cu:inst|248~1               ; combout          ;
+; |ec2|Halt                        ; |ec2|Halt                        ; padio            ;
+; |ec2|A[7]                        ; |ec2|A[7]                        ; padio            ;
+; |ec2|A[6]                        ; |ec2|A[6]                        ; padio            ;
+; |ec2|A[5]                        ; |ec2|A[5]                        ; padio            ;
+; |ec2|A[4]                        ; |ec2|A[4]                        ; padio            ;
+; |ec2|A[3]                        ; |ec2|A[3]                        ; padio            ;
+; |ec2|A[2]                        ; |ec2|A[2]                        ; padio            ;
+; |ec2|A[1]                        ; |ec2|A[1]                        ; padio            ;
+; |ec2|A[0]                        ; |ec2|A[0]                        ; padio            ;
+; |ec2|Enter                       ; |ec2|Enter~corein                ; combout          ;
+; |ec2|I[7]                        ; |ec2|I[7]~corein                 ; combout          ;
+; |ec2|I[6]                        ; |ec2|I[6]~corein                 ; combout          ;
+; |ec2|I[5]                        ; |ec2|I[5]~corein                 ; combout          ;
+; |ec2|I[4]                        ; |ec2|I[4]~corein                 ; combout          ;
+; |ec2|I[3]                        ; |ec2|I[3]~corein                 ; combout          ;
+; |ec2|I[2]                        ; |ec2|I[2]~corein                 ; combout          ;
+; |ec2|I[1]                        ; |ec2|I[1]~corein                 ; combout          ;
+; |ec2|I[0]                        ; |ec2|I[0]~corein                 ; combout          ;
++----------------------------------+----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue May 23 09:07:36 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off EC2 -c EC2
+Info: Using vector source file "D:/FACULTATE/AN3/Semestrul2/LMDSH/Tema1/SchemaQuartus/EC2.vwf"
+Warning: Can't find signal in vector source file for input pin "|ec2|I[7]"
+Warning: Can't find signal in vector source file for input pin "|ec2|I[6]"
+Warning: Can't find signal in vector source file for input pin "|ec2|I[5]"
+Warning: Can't find signal in vector source file for input pin "|ec2|I[4]"
+Warning: Can't find signal in vector source file for input pin "|ec2|I[3]"
+Warning: Can't find signal in vector source file for input pin "|ec2|I[2]"
+Warning: Can't find signal in vector source file for input pin "|ec2|I[1]"
+Warning: Can't find signal in vector source file for input pin "|ec2|I[0]"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      47.52 %
+Info: Number of transitions in simulation is 2000386
+Info: Quartus II Simulator was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 171 megabytes
+    Info: Processing ended: Tue May 23 09:07:57 2023
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:23
+
+
